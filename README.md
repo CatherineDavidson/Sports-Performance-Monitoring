@@ -2,6 +2,8 @@
 
 ## Introduction
 Welcome to **Sports Monitor**, a comprehensive platform developed during the Infosys Springboard 5.0 Internship by a dedicated and talented team. This platform aims to bridge the gap between sports administrators, coaches, and athletes by providing a unified solution for event management, performance tracking, and personalized training support. By streamlining these processes, Sports Monitor helps enhance collaboration and improve athletic outcomes. Sports Monitor connects Admins, Coaches, and Athletes, offering seamless management of sports events and personalized tracking of athlete performance. This solution leverages cutting-edge technologies to optimize the sports event experience for all users involved.
+
+Sports Monitor is a full-stack, complete project developed using in-demand technologies such as Spring Boot for the backend, React for the frontend, and MySQL for the database. This robust tech stack enables seamless integration between the various components of the platform, ensuring a smooth, secure, and highly responsive user experience. With its powerful backend capabilities and interactive frontend, Sports Monitor is designed to cater to the evolving needs of sports performance management, offering a scalable solution for managing sports events and athlete performance data.
 ---
 
 ## Table of Contents
@@ -329,8 +331,6 @@ Almost all the tables are normalized in BCNF or higher.
 
 ## Developers
 The Sports Monitor project is the result of the combined expertise and efforts of three outstanding individuals, each bringing their unique skills to the table. Vaibhav Sharma was the driving force behind both the frontend and backend development. He was responsible for the entire backend architecture, including database design, API development, and authentication and authorization, ensuring the platform's functionality and security. Vaibhav also contributed significantly to the frontend, integrating the user interface with the backend seamlessly. Sania Begum, a fellow Full Stack Developer, focused on the React frontend, playing a crucial role in the development of key components and ensuring a smooth, responsive user experience. Lastly, Catherine Davidson brought her expertise in UI/UX design, making sure that the application not only functioned well but also provided an intuitive, visually appealing interface. Together, these three brilliant minds created Sports Monitor, a powerful and user-friendly platform that reflects their hard work and collaborative spirit.
-
-Sports Monitor is a full-stack, complete project developed using in-demand technologies such as Spring Boot for the backend, React for the frontend, and MySQL for the database. This robust tech stack enables seamless integration between the various components of the platform, ensuring a smooth, secure, and highly responsive user experience. With its powerful backend capabilities and interactive frontend, Sports Monitor is designed to cater to the evolving needs of sports performance management, offering a scalable solution for managing sports events and athlete performance data.
 
 ## Team Profiles  
 
