@@ -1,0 +1,554 @@
+.adminDashboardHome {
+  background: linear-gradient( rgb(2, 0, 97) 15%, rgb(24, 23, 24) 158.5%, rgb(24, 23, 24) 158.5%,rgb(5, 5, 5) 158.5%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navbar-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+.logout-button{
+  margin: 5px;
+
+}
+.logout-button:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+/* Dashboard Actions */
+.dashboard-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.action-button {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  text-transform: none !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow:0 5px 7px #ddd;
+}
+
+.action-button:hover {
+  background-color: #15c143 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(21, 193, 67, 0.3);
+}
+
+/* Popup Styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  border-radius: 12px;
+  z-index: 1000;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideIn 0.3s ease-out;
+}
+
+.meetPopup {
+  width: 100%;
+}
+
+.eventPopup {
+  width: 90%;
+  max-width: 500px;
+}
+
+.popup-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-field:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-input {
+  background: #f5f7fa;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 93%;
+  transition: all 0.3s ease;
+}
+
+.file-input:hover {
+  border-color: #15c143;
+  background: #f0f7f2;
+}
+
+.submit-button {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  margin-top: 1rem !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.submit-button:hover {
+  background-color: #15c143 !important;
+  transform: translateY(-2px);
+}
+
+.close-button {
+  margin-top: 1rem !important;
+  color: #000000 !important;
+  width: 100%;
+  transition: all 0.3s ease !important;
+}
+
+.close-button:hover {
+  color: #ffffff !important;
+  background-color: #15c143 !important;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+}
+.table-header, .table-cell {
+  max-width: 100%;
+  border: 1px solid #bab8b8;
+  padding: 12px;
+  text-align: center;
+}
+
+.table-header {
+  background-color: rgb(159, 157, 157);
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.table-section {
+  padding: 2rem;
+  width :100%;
+}
+
+
+.tabs-container {
+  display: flex;
+  justify-content: center; /* Center the tabs horizontally */
+  align-items: center;
+  gap: 3px; /* Space between tabs */
+  border-bottom: 2px solid #e0e0e0; /* Line separating the tabs */
+  padding-bottom: 8px; /* Space between tabs and the separating line */
+  width: 100%;
+}
+.logout-link{
+  margin: 5px;
+}
+
+/* Basic styling for the popup */
+.resultPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Adjusted width for better responsiveness on smaller screens */
+  max-width: 150vh; /* Set a max width for larger screens */
+  min-height: 50vh; /* Set a max width for larger screens */
+  max-height: 90vh; /* Limit height to make it scrollable within the viewport */
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  overflow-y: auto; /* Enables vertical scrolling within the form */
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.resultPopup h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.resultPopup h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* List of events */
+.resultPopup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resultPopup li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resultPopup li button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.resultPopup li button:hover {
+  background-color: #45a049;
+}
+
+/* Table for displaying event results */
+.resultPopup table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.resultPopup th, .resultPopup td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+/* Table header styling */
+.resultPopup th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Table row styling */
+.resultPopup tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.resultPopup tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Image styling for athlete pictures */
+.resultPopup td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Input fields for scores and comments */
+.resultPopup input[type="number"],
+.resultPopup input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button styles for submit and cancel */
+.resultPopup button {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.resultPopup .submitButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.resultPopup .submitButton:hover {
+  background-color: #45a049;
+}
+
+.resultPopup .cancelButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.resultPopup .cancelButton:hover {
+  background-color: #e53935;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .resultPopup {
+      width: 95%;
+      max-width: none;
+  }
+
+  .resultPopup table th, .resultPopup table td {
+      font-size: 14px;
+      padding: 8px 10px;
+  }
+
+  .resultPopup button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
+.custom-file-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  background-color: #f5f5f5;
+}
+
+.custom-file-input:hover {
+  border-color: #4CAF50;
+}
+
+.custom-file-input .upload-icon {
+  font-size: 2rem;
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.custom-file-input .upload-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.custom-file-input input[type="file"] {
+  display: none;
+}
+
+/* Popup container to position the popup in the center */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it is on top of the overlay */
+  width: 400px; /* You can adjust the width */
+}
+
+/* Event Popup title customization */
+.eventPopup h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Popup form styling */
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form field customization */
+.form-field {
+  margin-bottom: 10px;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+/* Close button styling */
+.close-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.close-button:hover {
+  background-color: #c0392b;
+}
+
+/* Overlay background styling (dimming effect) */
+.overlay {
+  position: fixed;
+  top: 50;
+  left: 0;
+  width: 100vw;
+  height: 200%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 999; /* Ensure it is below the popup */
+}
+
+/* Loader styling */
+.loader-container {
+  position: fixed;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the loader */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001; /* Make sure loader appears above other content */
+}
+
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey border */
+  border-top: 4px solid #3498db; /* Blue color for the rotating part */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframe animation for spinning loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Overlay for popup */
+.popup1-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup box styling */
+.popup1-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #f1f1f1;
+  color: #000;
+  border: none;
+  border-radius: 5%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icon container */
+.popup1-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8f5e9; /* Light green background */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+}
+
+.popup1-icon span {
+  color: #4caf50; /* Green check color */
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Message text */
+.popup1-content h3 {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+

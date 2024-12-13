@@ -1,0 +1,319 @@
+.coach-dashboard {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.dashboard-header {
+  background-color: #f8f9fa;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+.dashboard-header nav {
+  margin-top: 1rem;
+}
+
+.dashboard-header button {
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-header button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.profile-section,
+.achievements-section,
+.assistance-requests-section,
+.athletes-section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.profile-section h3,
+.achievements-section h3,
+.assistance-requests-section h3,
+.athletes-section h3 {
+  margin-bottom: 1rem;
+}
+
+
+
+.achievement-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  z-index: 1000;          /* Ensure it's above all other content */
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%; /* Responsive width */
+  text-align: center; /* Align content to the center */
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* Space out buttons */
+  gap: 10px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.edit-profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 1000; /* Ensure it overlays other content */
+}
+
+.edit-modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%; /* Responsive width */
+  text-align: left; /* Align form content to the left */
+}
+
+.edit-modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.edit-modal-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 15px; /* Space between form fields */
+}
+
+
+
+.edit-modal-form input[type="text"],
+.edit-modal-form input[type="file"],
+.edit-modal-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.edit-modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between; /* Space out buttons */
+  gap: 10px;
+}
+
+.edit-modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+}
+
+button.cancel-button {
+  background-color: #dc3545; /* Red button */
+  color: #fff;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navbar-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+.px-2{
+  background-color: #ffffff;
+  color: rgb(49, 49, 118);
+  margin: 0;
+  width: 110px;
+}
+.coachDashboard {
+  background: linear-gradient( rgb(2, 0, 97) 15%, rgb(24, 23, 24) 158.5%, rgb(24, 23, 24) 158.5%,rgb(5, 5, 5) 158.5%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.edit-profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-modal-content {
+  width: 80%;
+  max-width: 800px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.edit-modal-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.edit-modal-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.edit-modal-form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.form-buttons {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.form-buttons button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-buttons button.success {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.form-buttons button.secondary {
+  background-color: #ccc;
+  color: #333;
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.required {
+  color: #e53935;
+}
+
+/* Container for the file upload */
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+/* Loader overlay to center the loader */
+.loader-overlay {
+  position: fixed; /* Fixed position to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Slight overlay to darken background */
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+/* Simple CSS spinner */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid green;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Style for the text (optional) */
+.loader-overlay p {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  
+}

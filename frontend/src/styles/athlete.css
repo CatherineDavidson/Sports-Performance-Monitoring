@@ -1,0 +1,779 @@
+/* Base styles */
+.athlete-dashboard {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1em;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 97.5%;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.header nav {
+  margin-top: 0.0em;
+}
+
+.header nav a {
+  color: #fff;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Profile and sections */
+.profile-section,  .my-events-section, .coaches-section {
+  margin: 1em;
+  margin-top: 0em;
+  padding: 1em;
+  border: 1px solid #fafafa;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  
+}
+
+/* Button styles */
+button {
+  padding: 0.6em 1.2em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+
+th, td {
+  border: 1px solid #bab8b8;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(171, 168, 168);
+  font-weight: bold;
+}
+td{
+  background-color: #f1f2f3;
+}
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 1em;
+}
+
+/* Modal (Popup) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 10px;
+  width: 500px;
+  max-width: 100%;
+  height: 95%;
+  border-radius: 15px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal label {
+  display: block;
+}
+
+.modal input[type="text"],
+.modal input[type="date"],
+.modal input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+.modal .modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal .modal-actions button {
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.modal .modal-actions button:hover {
+  background-color: #333;
+}
+
+/* My Events section */
+.my-events-section {
+  padding: 20px;
+  background-color: #f1ecec;
+  border-radius: 2px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 15px 0;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tabs button:hover {
+  background-color: #333;
+}
+
+.tabs button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.event {
+  padding: 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event h4 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.event p {
+  margin: 0;
+  color: #666;
+}
+
+/* Event cards */
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.event-card {
+  padding: 0px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 240px;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+}
+
+.event-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.event-card h4 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+
+.event-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+
+/* General styles */
+
+.events-section{
+  margin-top: 20px;
+  max-width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #c1c4c6;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  max-width: 1200px;
+  margin: 40px auto;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+.profile-section:hover {
+  transform: scale(1.03);
+}
+
+
+
+.athlete-info {
+  color: white;
+  padding: 0 20px;
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+
+button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: #060606;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.disabled{
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #8b8d8e;
+}
+.disabled:hover{
+  background-color: #8b8d8e;
+}
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-radius: 2px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+.btn2{
+  width: 180px;
+  margin-left: 10px;
+}
+.athlete-info {
+  background: linear-gradient(135deg, #525558, #43526c);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-photo {
+  width: 300px;
+  height:290px;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+}
+
+.athlete-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.athlete-info p span {
+  font-weight: bold;
+}
+
+button {
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff8c00;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .athlete-info {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+ 
+  button {
+    padding: 8px 16px;
+  }
+}
+
+/* Floating label container */
+.modal-content label {
+  position: relative;
+  display: block;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.modal-content label input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 8px;
+  font-size: 18px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content label input:focus {
+  border: 2px solid #007BFF;
+  outline: none;
+}
+
+.modal-content label input:focus + span,
+.modal-content label input:not(:placeholder-shown) + span {
+  transform: translateY(-140%);
+  font-size: 12px;
+  color: #96989b;
+}
+
+.modal-content label span {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  background: white;
+  padding: 0 4px;
+  font-size: 18px;
+  transition: 0.3s ease all;
+  pointer-events: none; /* Prevent label selection */
+  color: #757575;
+}
+
+label input:focus + span {
+  color: #434446;
+}
+
+.btn2{
+  background-color: #000;
+  color: white;
+  width: 200px;
+}
+.resultPopup{
+  text-align: center;
+}
+
+textarea {
+  width: 93%;
+  min-height: 100px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+@keyframes swipeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.transition-container {
+  animation: swipeLeft 0.5s ease forwards;
+}
+
+.event-card {
+  position: relative;
+  width: 240px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.event-card h3,
+.event-card p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.event-card button {
+  display: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.event-card:hover button {
+  display: block;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Centering and jump animation */
+.centered-jump {
+  display: flex; 
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 7vh; /* Full viewport height to center vertically */
+  text-align: center; /* Align text within its box */
+  animation: slowJump 2s ease-in-out infinite; /* Apply animation */
+  margin-bottom: 20px;
+}
+
+/* Jump animation keyframes */
+@keyframes slowJump {
+  0%, 100% {
+    transform: translateY(0); /* Default position */
+  }
+  50% {
+    transform: translateY(-10px); /* Jump up */
+  }
+}
+.events-section{
+  margin: 1em;
+  margin-top: 0em;
+  padding: 1em;
+  border: 1px solid #fafafa;
+  border-radius: 8px;
+  background-color: #edecec;
+}
+/* Center container */
+.tabs-container {
+  display: flex;
+  justify-content: center; /* Center the tabs horizontally */
+  align-items: center;
+  gap: 3px; /* Space between tabs */
+  border-bottom: 2px solid #e0e0e0; /* Line separating the tabs */
+  padding-bottom: 8px; /* Space between tabs and the separating line */
+  width: 100%;
+}
+
+/* Tab button styles */
+.tab-button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0; /* Adjust vertical padding */
+  color: #666; /* Default text color */
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative; /* To position the underline */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+  width: 200px;
+}
+
+/* Add underline on hover */
+.tab-button::after {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* Distance from text to underline */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #1a73e8; /* Blue underline */
+  transition: width 0.3s ease; /* Smooth underline effect */
+  border-radius: 0;
+}
+
+/* Hover effect */
+.tab-button:hover::after {
+  width: 100%; /* Full width underline on hover */
+}
+
+.tab-button:hover {
+  color: #f4f6f8; /* Text color on hover */
+}
+
+/* Active state for selected tab */
+.tab-button.active {
+  color: #1a73e8; /* Active tab text color */
+}
+
+.tab-button.active::after {
+  width: 100%; /* Full underline for the active tab */
+}
+
+/* Container for tabs */
+.tabs1 {
+  display: flex;
+  justify-content: center; /* Center align the buttons */
+  gap: 20px; /* Space between buttons */
+  margin: 20px 0; /* Add space around the tab group */
+}
+
+/* Default button styles */
+.tab1-button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white; /* White text */
+  background-color: black; /* Black background */
+  padding: 12px 20px; /* Add padding for size */
+  border: none; /* Remove borders */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width:400px;
+}
+
+/* Active button styles */
+.tab1-button.active {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+}
+
+/* Hover effect */
+.tab1-button:hover {
+  background-color: #007bff; /* Change background to blue */
+  color: white; /* Text remains white */
+}
+.athlete-dashboard{
+  background: linear-gradient( rgb(2, 0, 97) 15%, rgb(24, 23, 24) 158.5%, rgb(24, 23, 24) 158.5%,rgb(5, 5, 5) 158.5%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color:rgb(217, 217, 244);
+}
+.button-19{
+  background: linear-gradient(to right, #3b82f6, #9333ea); /* from-blue-500 to-purple-600 */
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 9999px; /* rounded-full */
+  color: #ffffff; /* text-white */
+  font-weight: 500; /* font-medium */
+  transition: transform 0.2s, box-shadow 0.2s; /* transition for hover effects */
+}
+
+.button-19:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* hover:shadow-lg */
+  transform: scale(1.05); /* hover:scale-105 */
+}
+/* Container for the file upload */
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+/* Loader overlay to center the loader */
+.loader-overlay {
+  position: fixed; /* Fixed position to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Slight overlay to darken background */
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+/* Simple CSS spinner */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid green;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Style for the text (optional) */
+.loader-overlay p {
+  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,56 @@
+1. User Registration
+
+Endpoint: POST /api/register
+
+Description: Registers a new user (Athlete, Coach, or Admin) in the system. The role should indicate the type of user being registered.
+
+Request Parameters:
+- role: (string, required) Role of the user ("athlete", "coach", "admin")
+
+Request Payload:
+
+{
+    "username": "string",
+    "email": "string",
+    "password": "string"
+    "role" : "string" // "athlete", "coach", "admin"
+}
+
+
+Response:
+{
+User registered successfully
+}
+
+**Error Responses:**
+- Code 201: "OK"
+- Code 400: "Bad Request" //email already exists
+- Code 400: "Bad Request" //rawPassword cannot be null
+
+2. User Authentication
+
+Endpoint: POST /api/authenticate
+
+Description: Authenticates a user by checking the provided credentials (username/email and password).
+
+Request Payload:
+
+{
+    "usernameEmail": "string",
+    "password": "string"
+}
+
+
+Response:
+
+{
+    "token": "string"
+}
+
+
+Error Responses:
+- Code 200: "Token generated successfully"
+- Code 401: "Invalid credentials"
+- Code 400: "Bad Request"
+- Code 403: "Unauthorized Access"
+
