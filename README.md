@@ -391,7 +391,18 @@ We thank Infosys Springboard 5.0 for providing this amazing internship opportuni
 ---
 
 ## License
+
 This project is licensed under the MIT License.
+
+This project was developed as part of the **Infosys Springboard Internship 5.0** program. While the project is released under the MIT License, any proprietary tools, technologies, or intellectual property provided by Infosys during the internship remain the property of Infosys. The license granted here does not affect any rights, terms, or conditions imposed by Infosys or any other parties involved.
+
+### Usage and Contribution Guidelines
+- You are welcome to **use this project for demo purposes**, contribute to its development, and experiment with it.
+- **Contributions** are encouraged! You can open issues, create pull requests, and suggest improvements.
+- **Please do not claim this project as your own**. This project must be attributed to its original authors, and you cannot present it as your own work in any form.
+- You are **not permitted to use this project for commercial purposes** without explicit permission from the original authors.
+  
+By using or contributing to this project, you agree to comply with the terms of the MIT License and any relevant terms set by the **Infosys Springboard Internship 5.0** program.
 
 ---
 
