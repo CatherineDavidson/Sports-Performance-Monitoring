@@ -4,6 +4,7 @@
 Welcome to **Sports Monitor**, a comprehensive platform developed during the Infosys Springboard 5.0 Internship by a dedicated and talented team. This platform aims to bridge the gap between sports administrators, coaches, and athletes by providing a unified solution for event management, performance tracking, and personalized training support. By streamlining these processes, Sports Monitor helps enhance collaboration and improve athletic outcomes. Sports Monitor connects Admins, Coaches, and Athletes, offering seamless management of sports events and personalized tracking of athlete performance. This solution leverages cutting-edge technologies to optimize the sports event experience for all users involved.
 
 Sports Monitor is a full-stack, complete project developed using in-demand technologies such as Spring Boot for the backend, React for the frontend, and MySQL for the database. This robust tech stack enables seamless integration between the various components of the platform, ensuring a smooth, secure, and highly responsive user experience. With its powerful backend capabilities and interactive frontend, Sports Monitor is designed to cater to the evolving needs of sports performance management, offering a scalable solution for managing sports events and athlete performance data.
+
 ---
 
 ## Table of Contents
