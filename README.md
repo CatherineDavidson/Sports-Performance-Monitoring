@@ -328,7 +328,7 @@ Almost all the tables are normalized in BCNF or higher.
 ---
 
 ## Developers
-Meet the brilliant minds behind Sports Monitor, each bringing unique expertise to this innovative project. Vaibhav Sharma and Sania Begum collaborated as Full Stack Developers, contributing to both frontend and backend functionalities. Catherine Davidson specialized in frontend design, ensuring an intuitive and visually appealing user interface.
+The Sports Monitor project is the result of the combined expertise and efforts of three outstanding individuals, each bringing their unique skills to the table. Vaibhav Sharma was the driving force behind both the frontend and backend development. He was responsible for the entire backend architecture, including database design, API development, and authentication and authorization, ensuring the platform's functionality and security. Vaibhav also contributed significantly to the frontend, integrating the user interface with the backend seamlessly. Sania Begum, a fellow Full Stack Developer, focused on the React frontend, playing a crucial role in the development of key components and ensuring a smooth, responsive user experience. Lastly, Catherine Davidson brought her expertise in UI/UX design, making sure that the application not only functioned well but also provided an intuitive, visually appealing interface. Together, these three brilliant minds created Sports Monitor, a powerful and user-friendly platform that reflects their hard work and collaborative spirit.
 
 ## Team Profiles  
 
